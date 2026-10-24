@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Panorama por Área 19–23/10</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: coluna única; visão geral no topo e um bloco por área de origem */
+:root{
+  --bg:#F5F7FC; --paper:#FFFFFF; --ink:#080E32; --muted:#5A6283; --line:#DDE3F0;
+  --blue:#0055FF; --blue-soft:#E6EEFF; --coral:#E0473F; --green:#137A4B; --grey-soft:#EEF0F5;
+  --display:"Sora","Segoe UI",system-ui,sans-serif;
+  --body:"DM Sans","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1000px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:36px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(26px,4vw,36px);line-height:1.15}
+h2{font-size:21px}
+p{margin:0;max-width:72ch}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);font-weight:700}
+header{display:grid;gap:10px}
+.sub,.note{color:var(--muted)}
+.note{font-size:13px}
+section{display:grid;gap:14px}
+
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:2px}
+.stat b{font-family:var(--display);font-size:28px;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+
+.tbl{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--grey-soft);white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+tr.total td{font-weight:700;background:var(--grey-soft)}
+.zero{color:#A7AEC6}
+
+.area{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:14px}
+.area-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 16px}
+.rate{font-size:14px;color:var(--muted)}
+.rate b{font-family:var(--display);font-size:20px;color:var(--ink);font-variant-numeric:tabular-nums}
+.kpis{display:flex;flex-wrap:wrap;gap:8px}
+.kpi{background:var(--grey-soft);border-radius:8px;padding:6px 10px;font-size:13px;color:var(--muted)}
+.kpi b{color:var(--ink);font-variant-numeric:tabular-nums;margin-right:4px}
+.area .tbl{border-radius:8px}
+
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:720px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Ocorrências e Multas · Panorama semanal</div>
+  <h1>Ocorrências por área: semana de 19 a 23 de outubro</h1>
+  <p class="sub">Áreas que abriram ocorrências na semana, sem contar Implantação, que tem relatório próprio. Período de segunda 19/10 00:00 até sexta 23/10, horário de Brasília.</p>
+</header>
+
+<section>
+  <div class="stats">
+    <div class="stat"><b>72</b><span>cards entraram</span></div>
+    <div class="stat"><b>70</b><span>aprovados para contato</span></div>
+    <div class="stat"><b>2</b><span>excluídos na triagem</span></div>
+    <div class="stat"><b>18</b><span>ocorrências aplicadas</span></div>
+    <div class="stat"><b>39</b><span>justificativas válidas</span></div>
+  </div>
+  <p class="note">Os números contam o que aconteceu na semana. Um card que entrou antes pode ter sido aprovado ou fechado agora, por isso aplicadas e justificativas válidas podem passar do número de cards que entraram. Taxa de aplicação = aplicadas ÷ (aplicadas + justificativas válidas).</p>
+</section>
+
+<section>
+  <h2>Visão geral</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Área</th><th class="num">Entraram</th><th class="num">Aprovados p/ contato</th><th class="num">Excluídos na triagem</th><th class="num">Aplicadas</th><th class="num">Justificativa válida</th><th class="num">Taxa de aplicação</th></tr></thead>
+    <tbody>
+      <tr><td>Comentários</td><td class="num">25</td><td class="num">25</td><td class="num zero">0</td><td class="num">6</td><td class="num">28</td><td class="num">18%</td></tr>
+      <tr><td>Gestor Regional</td><td class="num">24</td><td class="num">23</td><td class="num">1</td><td class="num">10</td><td class="num">7</td><td class="num">59%</td></tr>
+      <tr><td>Caça Ocorrências</td><td class="num">13</td><td class="num">13</td><td class="num zero">0</td><td class="num zero">0</td><td class="num zero">0</td><td class="num zero">–</td></tr>
+      <tr><td>Atendimento ao Hóspede</td><td class="num">6</td><td class="num">6</td><td class="num zero">0</td><td class="num zero">0</td><td class="num zero">0</td><td class="num zero">–</td></tr>
+      <tr><td>Danos</td><td class="num">3</td><td class="num">3</td><td class="num zero">0</td><td class="num">2</td><td class="num">3</td><td class="num">40%</td></tr>
+      <tr><td>Suporte Franquias</td><td class="num">1</td><td class="num zero">0</td><td class="num">1</td><td class="num zero">0</td><td class="num">1</td><td class="num">0%</td></tr>
+      <tr class="total"><td>Total</td><td class="num">72</td><td class="num">70</td><td class="num">2</td><td class="num">18</td><td class="num">39</td><td class="num">32%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Despesas e Treinamento não tiveram cards novos, mas fecharam casos de semanas anteriores. Despesas teve 1 aplicada e 3 justificativas válidas (8.1). Treinamento teve 7 aplicadas e 2 justificativas válidas (10.1).</p>
+</section>
+
+<section class="area">
+  <div class="area-head"><h2>Comentários</h2><span class="rate">Taxa de aplicação <b>18%</b></span></div>
+  <div class="kpis"><span class="kpi"><b>25</b>entraram</span><span class="kpi"><b>25</b>aprovados</span><span class="kpi"><b>17</b>ainda em contato</span><span class="kpi"><b>6</b>aplicadas</span><span class="kpi"><b>28</b>justificativas válidas</span></div>
+  <p class="note">Foram 6 aplicadas em 34 casos fechados.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Subcategoria</th><th class="num">Entraram</th><th class="num">Aplicadas</th><th class="num">Justificativa válida</th></tr></thead>
+    <tbody>
+      <tr><td>3.7</td><td class="num">6</td><td class="num">1</td><td class="num">5</td></tr>
+      <tr><td>5.3</td><td class="num">5</td><td class="num">2</td><td class="num">4</td></tr>
+      <tr><td>3.1</td><td class="num">3</td><td class="num">2</td><td class="num">3</td></tr>
+      <tr><td>3.3</td><td class="num">3</td><td class="num zero">0</td><td class="num">1</td></tr>
+      <tr><td>4.1</td><td class="num">2</td><td class="num zero">0</td><td class="num">5</td></tr>
+      <tr><td>5.5</td><td class="num">2</td><td class="num zero">0</td><td class="num">1</td></tr>
+      <tr><td>3.2</td><td class="num">1</td><td class="num zero">0</td><td class="num">2</td></tr>
+      <tr><td>4.3</td><td class="num">1</td><td class="num zero">0</td><td class="num">2</td></tr>
+      <tr><td>5.1</td><td class="num">1</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr><td>6.2</td><td class="num">1</td><td class="num">1</td><td class="num">5</td></tr>
+      <tr class="total"><td>Total</td><td class="num">25</td><td class="num">6</td><td class="num">28</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="area">
+  <div class="area-head"><h2>Gestor Regional</h2><span class="rate">Taxa de aplicação <b>59%</b></span></div>
+  <div class="kpis"><span class="kpi"><b>24</b>entraram</span><span class="kpi"><b>23</b>aprovados</span><span class="kpi"><b>1</b>excluído na triagem</span><span class="kpi"><b>23</b>ainda em contato</span><span class="kpi"><b>10</b>aplicadas</span><span class="kpi"><b>7</b>justificativas válidas</span></div>
+  <p class="note">Foram 10 aplicadas em 17 casos fechados. A exclusão foi uma 11.1 de uma franquia que já tinha 11.1 no mês, e a régua permite uma pontuação por mês.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Subcategoria</th><th class="num">Entraram</th><th class="num">Aplicadas</th><th class="num">Justificativa válida</th></tr></thead>
+    <tbody>
+      <tr><td>6.1</td><td class="num">19</td><td class="num">8</td><td class="num">4</td></tr>
+      <tr><td>11.1</td><td class="num">5</td><td class="num">2</td><td class="num">3</td></tr>
+      <tr class="total"><td>Total</td><td class="num">24</td><td class="num">10</td><td class="num">7</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="area">
+  <div class="area-head"><h2>Caça Ocorrências</h2><span class="rate">Taxa de aplicação <b>–</b></span></div>
+  <div class="kpis"><span class="kpi"><b>13</b>entraram</span><span class="kpi"><b>13</b>aprovados</span><span class="kpi"><b>12</b>ainda em contato</span><span class="kpi"><b>0</b>casos fechados</span></div>
+  <p class="note">Todos os cards da semana ainda estão em contato com a franquia, menos uma 2.2 que foi excluída depois da aprovação.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Subcategoria</th><th class="num">Entraram</th><th class="num">Aplicadas</th><th class="num">Justificativa válida</th></tr></thead>
+    <tbody>
+      <tr><td>4.1</td><td class="num">5</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr><td>2.2</td><td class="num">3</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr><td>6.2</td><td class="num">2</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr><td>3.8</td><td class="num">1</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr><td>5.3</td><td class="num">1</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr><td>10.9</td><td class="num">1</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+      <tr class="total"><td>Total</td><td class="num">13</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="area">
+  <div class="area-head"><h2>Atendimento ao Hóspede</h2><span class="rate">Taxa de aplicação <b>–</b></span></div>
+  <div class="kpis"><span class="kpi"><b>6</b>entraram</span><span class="kpi"><b>6</b>aprovados</span><span class="kpi"><b>6</b>ainda em contato</span><span class="kpi"><b>0</b>casos fechados</span></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Subcategoria</th><th class="num">Entraram</th><th class="num">Aplicadas</th><th class="num">Justificativa válida</th></tr></thead>
+    <tbody>
+      <tr><td>4.1</td><td class="num">6</td><td class="num zero">0</td><td class="num zero">0</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="area">
+  <div class="area-head"><h2>Danos</h2><span class="rate">Taxa de aplicação <b>40%</b></span></div>
+  <div class="kpis"><span class="kpi"><b>3</b>entraram</span><span class="kpi"><b>3</b>aprovados</span><span class="kpi"><b>2</b>ainda em contato</span><span class="kpi"><b>2</b>aplicadas</span><span class="kpi"><b>3</b>justificativas válidas</span></div>
+  <p class="note">Foram 2 aplicadas em 5 casos fechados.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Subcategoria</th><th class="num">Entraram</th><th class="num">Aplicadas</th><th class="num">Justificativa válida</th></tr></thead>
+    <tbody>
+      <tr><td>7.2</td><td class="num">3</td><td class="num">2</td><td class="num">3</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="area">
+  <div class="area-head"><h2>Suporte Franquias</h2><span class="rate">Taxa de aplicação <b>0%</b></span></div>
+  <div class="kpis"><span class="kpi"><b>1</b>entrou</span><span class="kpi"><b>1</b>excluído na triagem</span><span class="kpi"><b>1</b>justificativa válida</span></div>
+  <p class="note">O card da semana (10.9) foi excluído na triagem por estar com a franquia "A Definir" e descrição genérica. A justificativa válida é de um caso de semana anterior.</p>
+</section>
+
+<footer>Fonte: app de ocorrências e multas, lido em 23/10/2026. Nenhum card foi alterado.</footer>
+
+</div>
+</body>
+</html>
